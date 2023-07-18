@@ -139,6 +139,12 @@ Abrir o arquivo mirrorlist (Opção 2) (retirar apenas 1 hashtag de cada linha)
 nano /etc/pacman.d/mirrorlist
 ```
 
+Liberando o download paralelo (descomentar o ParallelDownloads = 5) (Colocar o número que desejar)
+
+```
+nano /etc/pacman.conf
+```
+
 Instalação do sistema base e pacotes adicionais
 
 ```
