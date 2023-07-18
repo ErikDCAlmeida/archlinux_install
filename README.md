@@ -1,6 +1,6 @@
 # Instalar o Arch Linux na mão
 
-## PRÉ-INSTALAÇÂO
+## PRÉ-INSTALAÇÃO
 
 Configura o teclado do layout da ISO
 
