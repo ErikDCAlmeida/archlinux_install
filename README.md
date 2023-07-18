@@ -232,6 +232,7 @@ greeter-session=lightdm-slick-greeter
 Administrador
 
 ```
+groupadd sudo
 useradd -m -s /bin/bash -G sudo {name_user}
 passwd {name_user}
 ```
