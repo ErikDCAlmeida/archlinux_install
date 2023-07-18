@@ -246,8 +246,8 @@ Administrador
 
 ```
 groupadd sudo
-useradd -m -s /bin/bash -G sudo {name_user}
-passwd {name_user}
+useradd -m -s /bin/bash -G sudo -c "{full_name}" {login}
+passwd {login}
 ```
 
 Edite o arquivo `/etc/sudoers`
