@@ -37,12 +37,13 @@ Gerenciar Partições
 Layout das partições
 
 ```
-PARTIÇÃO	TAMANHO		FORMATO		PONTO DE MONTAGEM	BOOT	TIPO
-/dev/sda1	512MiB		FAT32		/boot/efi			Sim		EFI System
-/dev/sda2	1G			EXT4		/boot				Não		Linux Filesystem
-/dev/sda3	8G			Swap							Não		Linux Swap
-/dev/sda4	Maior %		EXT4		/					Não		Linux Filesystem
-/dev/sda5	Média %		EXT4		/user				Não		Linux Filesystem
+| PARTIÇÃO  | TAMANHO | FORMATO | PONTO DE MONTAGEM | BOOT | TIPO             |
+|-----------|---------|---------|-------------------|------|------------------|
+| /dev/sda1 | 512MiB  | FAT32   | /boot/efi         | Sim  | EFI System       |
+| /dev/sda2 | 1G      | EXT4    | /boot             | Não  | Linux Filesystem |
+| /dev/sda3 | 8G      | Swap    | -                 | Não  | Linux Swap       |
+| /dev/sda4 | Maior % | EXT4    | /                 | Não  | Linux Filesystem |
+| /dev/sda5 | Médio % | EXT4    | /user             | Não  | Linux Filesystem |
 ```
 
 ## FORMATANDO
