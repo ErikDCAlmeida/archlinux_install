@@ -183,6 +183,12 @@ Habilita a rede do sistema
 systemctl enable NetworkManager.service
 ```
 
+Initramfs (Opcional)
+
+```
+# mkinitcpio -P
+```
+
 Instalando inicializador (GRUB)
 
 ```
@@ -226,6 +232,13 @@ Edite o arquivo `/etc/lightdm/lightdm.conf`
 greeter-session=lightdm-slick-greeter
 ...
 ```
+
+Habilitando LightDM
+
+```
+systemctl enable lightdm
+```
+
 
 ## CRIANDO UM USUÁRIO
 
