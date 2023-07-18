@@ -259,7 +259,7 @@ Edite o arquivo `/etc/sudoers`
 ## INSTAÇÃO DO YAY (AUR)
 
 ```
-# su {name_user} -
+# su - {name_user}
 
 $ git clone https://aur.archlinux.org/yay.git
 $ cd yay
