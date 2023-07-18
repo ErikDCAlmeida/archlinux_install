@@ -48,16 +48,16 @@ Layout das partições
 
 ## FORMATANDO
 
-Formatando a partição UEFI:
-
-```
-# mkfs.fat -F 32 /dev/sda1
-```
-
 Formatando a partição BOOT:
 
 ```
 # mkfs.ext4 /dev/sda2
+```
+
+Formatando a partição UEFI:
+
+```
+# mkfs.fat -F 32 /dev/sda1
 ```
 
 Formatando a partição SWAP:
@@ -92,16 +92,16 @@ Montagem do HOME:
 # mount --mkdir /dev/sda5 /mnt/home
 ```
 
-Montagem do UEFI:
-
-```
-# mount --mkdir /dev/sda1 /mnt/boot/efi
-```
-
 Montagem do BOOT:
 
 ```
 # mount --mkdir /dev/sda2 /mnt/boot
+```
+
+Montagem do UEFI:
+
+```
+# mount --mkdir /dev/sda1 /mnt/boot/efi
 ```
 
 Habilitando o SWAP:
@@ -180,7 +180,7 @@ systemctl enable NetworkManager.service
 Instalando inicializador (GRUB)
 
 ```
-grub-install --target=x86_64-efi --efi-directory=/mnt/boot/efi --bootloader-id=GRUB
+grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB
 ```
 
 Configurando o inicializador (GRUB)
