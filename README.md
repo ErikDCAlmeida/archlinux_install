@@ -1,4 +1,4 @@
-#Instalar o Arch Linux na mão:
+# Instalar o Arch Linux na mão
 
 ## PRÉ-INSTALAÇÂO
 
