@@ -43,7 +43,7 @@ Layout das partições
 | /dev/sda2 | 1G      | EXT4    | /boot             | Não  | Linux Filesystem |
 | /dev/sda3 | 8G      | Swap    | -                 | Não  | Linux Swap       |
 | /dev/sda4 | Maior % | EXT4    | /                 | Não  | Linux Filesystem |
-| /dev/sda5 | Médio % | EXT4    | /user             | Não  | Linux Filesystem |
+| /dev/sda5 | Médio % | EXT4    | /home             | Não  | Linux Filesystem |
 ```
 
 ## FORMATANDO
@@ -72,12 +72,24 @@ Formatando a partição ROOT:
 # mkfs.ext4 /dev/sda4
 ```
 
+Formatando a partição HOME:
+
+```
+# mkfs.ext4 /dev/sda5
+```
+
 ## MONTANDO AS PARTIÇÕES
 
 Montagem do ROOT:
 
 ```
 # mount /dev/sda4 /mnt
+```
+
+Montagem do HOME:
+
+```
+# mount --mkdir /dev/sda5 /mnt/home
 ```
 
 Montagem do UEFI:
