@@ -243,6 +243,19 @@ Edite o arquivo `/etc/sudoers`
 #%sudo -> %sudo
 ```
 
+## INSTAÇÃO DO YAY (AUR)
+
+```
+# su {name_user} -
+
+$ git clone https://aur.archlinux.org/yay.git
+$ cd yay
+$ makepkg -si
+$ cd ..
+$ rm -rf yay
+```
+
+
 ## REBOOT
 
 ```
@@ -251,12 +264,3 @@ umount -R /mnt
 reboot
 ```
 
-## INSTAÇÃO DO YAY (AUR)
-
-```
-git clone https://aur.archlinux.org/yay.git
-cd yay
-makepkg -si
-cd ..
-rm -rf yay
-```
