@@ -168,7 +168,7 @@ systemctl enable NetworkManager.service
 Instalando inicializador (GRUB)
 
 ```
-grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB
+grub-install --target=x86_64-efi --efi-directory=/mnt/boot/efi --bootloader-id=GRUB
 ```
 
 Configurando o inicializador (GRUB)
