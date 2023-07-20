@@ -148,7 +148,7 @@ nano /etc/pacman.conf
 Instalação do sistema base e pacotes adicionais
 
 ```
-pacstrap -K /mnt base linux base-devel linux-firmware cinnamon nano grub efibootmgr lightdm lightdm-slick-greeter firefox gnome-terminal gnome-system-monitor gnome-calculator inkscape gimp gnome-disk-utility git sudo
+pacstrap -K /mnt base linux base-devel linux-firmware cinnamon nano grub efibootmgr lightdm lightdm-slick-greeter firefox gnome-terminal gnome-system-monitor gnome-calculator inkscape gimp gnome-disk-utility git sudo noto-fonts-emoji
 ```
 
 ## CONFIGURAÇÃO DO SISTEMA
